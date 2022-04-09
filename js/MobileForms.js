@@ -25,4 +25,15 @@ email.addEventListener('input',function(){
     }else{
         emailError.textContent = "Email is incorrect";
     }
+});
+
+const phone = document.querySelector('#tel');
+const phoneError = document.querySelector('.tel-error');
+phone.addEventListener('input',function(){
+    let phoneRegex = RegExp('^([0-9]{2}[ ][0-9]{10})$');
+    if(phoneRegex.test(phone.value)){
+        phoneError.textContent = "";
+    }else{
+        phoneError.textContent = "Phone number is incorrect";
+    }
 })
