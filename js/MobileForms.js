@@ -29,7 +29,7 @@ email.addEventListener('input',function(){
 
 const phone = document.querySelector('#tel');
 const phoneError = document.querySelector('.tel-error');
-phone.addEventListener('input',function(){
+phone.addEventListener('input',function(){ 
     let phoneRegex = RegExp('^([0-9]{2}[ ][0-9]{10})$');
     if(phoneRegex.test(phone.value)){
         phoneError.textContent = "";
