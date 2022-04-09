@@ -4,7 +4,7 @@ output.textContent = salary.value;
 salary.addEventListener('input', function(){
     output.textContent = salary.value;
 });
-
+ 
 const text = document.querySelector('#text');
 const textError = document.querySelector('.text-error');
 text.addEventListener('input',function(){
